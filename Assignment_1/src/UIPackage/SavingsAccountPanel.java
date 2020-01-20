@@ -172,8 +172,8 @@ private AccountInformation savingsAccountInformation ;
       
        savingsAccountInformation.setAccountType((String)AccountTypeComboBox.getSelectedItem());
  savingsAccountInformation.setBankAccountNumber(BankAccountNumberTextField.getText());
- savingsAccountInformation.setBankRoutingNumber(BankNameTextField.getText()); 
- savingsAccountInformation.setBankName(BankRoutingNumberTextField.getText());
+ savingsAccountInformation.setBankRoutingNumber(BankRoutingNumberTextField.getText()); 
+ savingsAccountInformation.setBankName(BankNameTextField.getText());
  person.setSavingsAccountInformation(savingsAccountInformation);
  
 JOptionPane.showMessageDialog(null,"Saved successfully");        // TODO add your handling code here:

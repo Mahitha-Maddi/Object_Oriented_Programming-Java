@@ -169,8 +169,8 @@ private AccountInformation checkingsAccountInformation ;
     checkingsAccountInformation.setAccountBalance(AccountBalanceTextField.getText()); 
         checkingsAccountInformation.setAccountType((String)AccountTypeComboBox1.getSelectedItem()); 
  checkingsAccountInformation.setBankAccountNumber(BankAccountNumberTextField.getText());
- checkingsAccountInformation.setBankRoutingNumber(BankNameTextField.getText()); 
- checkingsAccountInformation.setBankName(BankRoutingNumberTextField.getText());
+ checkingsAccountInformation.setBankRoutingNumber(BankRoutingNumberTextField.getText()); 
+ checkingsAccountInformation.setBankName(BankNameTextField.getText());
  person.setCheckingsAccountInformation(checkingsAccountInformation);
 JOptionPane.showMessageDialog(null,"Saved successfully");          // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
