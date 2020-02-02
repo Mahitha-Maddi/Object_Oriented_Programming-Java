@@ -82,9 +82,9 @@ public final void display(Person person,Address address,AccountInformation savin
     
     MedicalRecordNumberTextField1.setText(medicalRecord.getMedicalRecordNumber());
     
-    Alergy1TextField1.setText(medicalRecord.getMedicalRecordNumber());
-    Alergy2TextField1.setText(medicalRecord.getMedicalRecordNumber());
-    Alergy3TextField1.setText(medicalRecord.getMedicalRecordNumber());
+    Alergy1TextField1.setText(medicalRecord.getAlergy1());
+    Alergy2TextField1.setText(medicalRecord.getAlergy2());
+    Alergy3TextField1.setText(medicalRecord.getAlergy3());
   
     if (driversLicenseInformation.getPicture() == null)
      {
