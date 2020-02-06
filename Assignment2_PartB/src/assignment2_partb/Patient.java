@@ -253,7 +253,7 @@ public class Patient {
         }
         
         }return false;}
-   /*public boolean isPatientNormal(String name,double age,int r,int h,int b, float wk,float wp){
+   public boolean isPatientNormal(String name,double age,int r,int h,int b, float wk,float wp){
         if((age>=0.08)&&(age<1)){
             System.out.println("Patient is an infant"); 
         return (r>=20)&&(r<30)&&(h>=80)&&(h<140)&&(b>=70)&&(b<100)&&(wk>=4)&&(wk<10)&&(wp>=9)&&(wp<22);
@@ -285,7 +285,7 @@ public class Patient {
         }
    
         
-   }*/}
+   }}
         
         
   

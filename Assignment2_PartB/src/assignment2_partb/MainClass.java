@@ -30,9 +30,14 @@ System.out.println("Patient Name" + " ||"+"Time entered"+"               ||"+ "R
 VitalSigns currentVitalSigns=p.getCurrVital();
 System.out.println(p.getName() + "      ||"+currentVitalSigns.getTime()+"||"+ currentVitalSigns.getRespiratoryRate()+"               ||" + currentVitalSigns.getHeartRate()+"         ||" + currentVitalSigns.getBp() +"             ||"+ currentVitalSigns.getWeightKls() +"             ||"+ currentVitalSigns.getWeightPnds());
  System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------");    
-
+boolean result=p.isPatientNormal( p.getName(), p.getAge(), currentVitalSigns.getRespiratoryRate(), currentVitalSigns.getHeartRate(), currentVitalSigns.getBp(),  currentVitalSigns.getWeightKls(), currentVitalSigns.getWeightPnds());
+if (result==true){
+System.out.println("Patient is Normal");
     }
-    
+else{
+  System.out.println("Patient is abnormal");  
+}
+    }
 public static void main(String[] args) { 
 Patient p=new Patient();  
 System.out.println("Patient 1");
