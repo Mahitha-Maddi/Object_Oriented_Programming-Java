@@ -161,7 +161,8 @@ private VitalSignsHistory vsh;
     }//GEN-LAST:event_dateTextFieldActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       VitalSigns vs=vsh.addVitalSign();
+
+        VitalSigns vs=vsh.addVitalSign();
        double bp=Double.parseDouble(bloodPressureTextField.getText());
        
        double t=Double.parseDouble(temparatureTextField.getText());

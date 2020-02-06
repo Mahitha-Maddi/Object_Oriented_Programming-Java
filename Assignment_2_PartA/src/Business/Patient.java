@@ -38,12 +38,12 @@ public class Patient {
         this.vs = vs;
     }
    
-      boolean isPatientNormal(String name,double age,int r,int h,int b, float wk,float wp){
+      public boolean isPatientNormal(String name,double age,int r,int h,int b, float wk,float wp){
         if((age>=0.08)&&(age<1)){
             System.out.println("Name of the patient is "+name);
             System.out.println("Age of the patient is "+age);
             System.out.println("Patient is an infant");
-          
+          //isThisVitalSignNormal();
             System.out.println("Respiratory rate is "+r );
             if ((r>=20)&&(r<30)){
                 
