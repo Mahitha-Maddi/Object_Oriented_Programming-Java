@@ -69,7 +69,7 @@ System.out.println("Patient 1");
          vs.setTime(t1);
     p.setCurrVital(vs);
     
-    
+    printVitalSigns(p);
     
     System.out.println("****************Vital Signs 2******************");
      System.out.println("Enter patient age in years");
@@ -96,6 +96,7 @@ System.out.println("Patient 1");
          vs1.setWeightKls(patientWeightKls1);
          vs1.setWeightPnds(patientWeightPnds1); 
          vs1.setTime(t2);
+         printVitalSigns(p);
          
          System.out.println("****************Vital Signs 3******************");
      System.out.println("Enter patient age in years");
@@ -213,6 +214,7 @@ System.out.println("Patient 1");
          vs21.setWeightPnds(patientWeightPnds21); 
          vs21.setTime(t21);
     p2.setCurrVital(vs21);
+    printVitalSigns(p2);
     
     System.out.println("****************Vital Signs 2******************");
      System.out.println("Enter patient age in years");
@@ -240,6 +242,7 @@ System.out.println("Patient 1");
          vs22.setWeightKls(patientWeightKls22);
          vs22.setWeightPnds(patientWeightPnds22); 
          vs22.setTime(t22);
+         printVitalSigns(p2);
         
          System.out.println("****************Vital Signs 3******************");
      System.out.println("Enter patient age in years");
