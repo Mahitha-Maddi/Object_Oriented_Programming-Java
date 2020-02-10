@@ -1,9 +1,0 @@
-commit 1
-
-commit 2 --testing gitignore
-
-commit 3
-
-coomit 4
-
-commit 6
