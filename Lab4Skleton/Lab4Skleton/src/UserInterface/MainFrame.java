@@ -42,10 +42,11 @@ public class MainFrame extends javax.swing.JFrame {
         btnCustomer = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(500, 350));
 
         panelRight.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(panelRight);
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
 
         btnAdmin.setText("Admin");
         btnAdmin.addActionListener(new java.awt.event.ActionListener() {
