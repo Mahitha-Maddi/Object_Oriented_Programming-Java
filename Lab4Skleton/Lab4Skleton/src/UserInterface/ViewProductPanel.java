@@ -51,7 +51,7 @@ public class ViewProductPanel extends javax.swing.JPanel {
         cancelBtn = new javax.swing.JButton();
         backbtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(204, 204, 204));
+        setBackground(new java.awt.Color(204, 255, 255));
 
         txtPrice.setEditable(false);
 
@@ -101,7 +101,7 @@ public class ViewProductPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(backbtn)
-                        .addGap(43, 43, 43)
+                        .addGap(65, 65, 65)
                         .addComponent(lblHead))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
@@ -120,17 +120,19 @@ public class ViewProductPanel extends javax.swing.JPanel {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtProdName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(229, 229, 229))
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHead)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(backbtn)))
-                .addGap(65, 65, 65)
+                        .addComponent(backbtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(lblHead)))
+                .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblRoutingNo)
                     .addComponent(txtProdName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
