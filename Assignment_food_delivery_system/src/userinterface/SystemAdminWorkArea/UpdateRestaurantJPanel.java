@@ -9,6 +9,7 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization;
 import java.awt.CardLayout;
+import java.awt.Component;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -139,9 +140,17 @@ public class UpdateRestaurantJPanel extends javax.swing.JPanel {
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
         
+          CardLayout layout = (CardLayout)cardSequenceJPanel.getLayout();
         cardSequenceJPanel.remove(this);
-        CardLayout layout = (CardLayout) cardSequenceJPanel.getLayout();
         layout.previous(cardSequenceJPanel);
+        
+        
+        Component[] comps = this.cardSequenceJPanel.getComponents();
+        for(Component comp : comps){
+            if(comp instanceof ManageRestaurantsJPanel){
+                ManageRestaurantsJPanel manageRestaurantsJPanel= (ManageRestaurantsJPanel) comp;
+               manageRestaurantsJPanel.populateTable(); 
+            }}
     }//GEN-LAST:event_btnBackActionPerformed
     
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
@@ -166,7 +175,9 @@ public class UpdateRestaurantJPanel extends javax.swing.JPanel {
                  enterprise.setName(name);
                  enterprise.setAddress(address);
        JOptionPane.showMessageDialog(null, "Restaurant updated successfully");
-                 
+              txtRestaurantName.setEnabled(false);
+         
+         txtRestaurantAddress.setEnabled(false);    
                  
                  // TODO add your handling code here:
     }//GEN-LAST:event_btnSave1ActionPerformed

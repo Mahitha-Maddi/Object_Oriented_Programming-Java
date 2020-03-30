@@ -9,6 +9,7 @@ import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.event.KeyEvent;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -174,7 +175,8 @@ public class UpdateUserJPanel extends javax.swing.JPanel {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
-           
+           btnSave.setEnabled(false);
+        btnUpdate.setEnabled(true);
            if (usernamePatternCorrect()==false){
     UsrNameLabel.setForeground (Color.red);
     txtUserName.setBorder(BorderFactory.createLineBorder(Color.RED));
@@ -196,6 +198,13 @@ if (passwordPatternCorrect()==false){
         userAccount.setPassword(txtPassword.getText());
         userAccount.setUsername(txtUserName.getText());
         userAccount.getEmployee().setName(txtEmployeeName.getText());
+      
+         JOptionPane.showMessageDialog(null, "Updated successfully");
+   
+        txtUserName.setEnabled(false);
+        txtEmployeeName.setEnabled(false);
+        txtPassword.setEnabled(false);
+                
     }//GEN-LAST:event_btnSaveActionPerformed
  private boolean usernamePatternCorrect(){
         Pattern p=Pattern.compile("^[a-zA-Z0-9]+_[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$");
@@ -236,10 +245,17 @@ if (passwordPatternCorrect()==false){
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
-
+   CardLayout layout = (CardLayout)cardSequenceJPanel.getLayout();
         cardSequenceJPanel.remove(this);
-        CardLayout layout = (CardLayout) cardSequenceJPanel.getLayout();
         layout.previous(cardSequenceJPanel);
+        
+        
+        Component[] comps = this.cardSequenceJPanel.getComponents();
+        for(Component comp : comps){
+            if(comp instanceof ManageRestaurantsJPanel){
+                ManageRestaurantsJPanel manageRestaurantsJPanel= (ManageRestaurantsJPanel) comp;
+               manageRestaurantsJPanel.populateTable(); 
+            }}
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void txtEmployeeIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmployeeIdActionPerformed
