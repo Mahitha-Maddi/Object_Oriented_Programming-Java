@@ -222,6 +222,8 @@ if (passwordPatternCorrect()==false){
         txtPassword.setEnabled(true);
         btnSave.setEnabled(true);
         btnUpdate.setEnabled(false);
+        
+        
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void txtOrganizationTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOrganizationTypeActionPerformed
